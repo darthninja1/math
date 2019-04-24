@@ -1,3 +1,5 @@
+package worksheets;
+
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
@@ -19,7 +21,7 @@ public class Multiplication {
             for (int j = 0; j <= i; ) {
                 int num = rnd.nextInt(i + 1);
                 if (!set.contains(num)) {
-                    String formatted = String.format("%2d  x %2d =  _____", i, num);
+                    String formatted = String.format("%2d  " + "\u00D7" + " %2d =  _____", i, num);
                     System.out.println(formatted);
                     set.add(num);
                     j++;
@@ -32,7 +34,7 @@ public class Multiplication {
             for (int j = 0; j <= i; ) {
                 int num = rnd.nextInt(i + 1);
                 if (!set.contains(num)) {
-                    String formatted = String.format("%2d  x _____ = %2d", i, i * num);
+                    String formatted = String.format("%2d  " + "\u00D7" + " _____ = %2d", i, i * num);
                     System.out.println(formatted);
                     set.add(num);
                     j++;
@@ -50,7 +52,7 @@ public class Multiplication {
             for (int j = 0; j < MAX; ) {
                 int num = rnd.nextInt(MAX);
                 if (!set.contains(num)) {
-                    String formatted = String.format("%2d  x %2d =  _____", num, i);
+                    String formatted = String.format("%2d  " + "\u00D7" + " %2d =  _____", num, i);
                     System.out.println(formatted);
                     set.add(num);
                     j++;
@@ -63,7 +65,7 @@ public class Multiplication {
             for (int j = 0; j < MAX; ) {
                 int num = rnd.nextInt(MAX);
                 if (!set.contains(num)) {
-                    String formatted = String.format("____  x %2d =  %3d", i, i * num);
+                    String formatted = String.format("____  " + "\u00D7" + " %2d =  %3d", i, i * num);
                     System.out.println(formatted);
                     set.add(num);
                     j++;
