@@ -1,0 +1,6 @@
+.gradle/
+.idea/
+/out
+math.iml
+/lib
+src/scratch
