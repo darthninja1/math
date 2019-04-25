@@ -36,7 +36,6 @@ public class Addition {
                 if (!set.contains(num)) {
                     String formatted = String.format("%2d + _____ = %2d", i, i + num);
                     System.out.println(formatted);
-//                    System.out.println(i + " + " + "____ = " + (i + num));
                     set.add(num);
                     j++;
                 }
